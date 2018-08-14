@@ -1,0 +1,47 @@
+// ------------------------------------------------------------------
+// ---        _____               ___    ___________  ___         ---
+// ---       / ___ \             /_  \  /____  ____/ / _ \        ---
+// ---      / /   \ \             /  /      / /     / / \ \       ---
+// ---     / /     \ \  ____     /  /      / /     / /___\ \      ---
+// ---    / /      / / / /_\ \  /  /      / /     / _______ \     ---
+// ---   / /______/ / / _____/ /  /__    / /     / /       \ \    ---
+// ---   \_________/  \_____/  \____/    \/      \/         \/    ---
+// ------------------------------------------------------------------
+
+echo --- training map ---
+
+sv_cheats 1
+
+bot_kill
+bot_kick
+bot_stop 1
+
+//无限子弹
+sv_infinite_ammo 1
+//投掷物轨迹
+sv_grenade_trajectory 1
+sv_grenade_trajectory_dash 0;
+sv_grenade_trajectory_thickness 1;
+sv_grenade_trajectory_time 12;
+//射击落点
+sv_showimpacts 2
+
+//一局游戏时间设定为60min
+mp_roundtime 60
+mp_roundtime_defuse 60
+mp_roundtime_hostage 60
+
+//最大金钱、初始金钱60000
+mp_maxmoney 60000
+mp_startmoney 60000
+
+//随时随地购买物品
+mp_freezetime 0
+mp_buytime 9999
+mp_buy_anywhere 1
+
+//按alt穿越地形，再按alt变回正常模式
+bind alt noclip
+
+//设置完成之后重新开始游戏
+mp_restartgame 1
